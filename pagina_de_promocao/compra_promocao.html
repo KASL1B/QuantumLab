@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- ATUALIZAÇÃO 01/09 - TODA ESTA PÁGINA FOI CRIADA NESTA ATUALIZAÇÃO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Promoção - Minha Loja</title>
+    <link rel="stylesheet" href="compra_promocao.css">
+</head>
+
+<body>
+
+    <!-- ATUALIZAÇÃO 01/09 - BARRA SUPERIOR -->
+    <div class="barra-topo">
+        OFERTA ESPECIAL POR TEMPO LIMITADO
+    </div>
+
+    <!-- ATUALIZAÇÃO 01/09 - CABEÇALHO -->
+    <header>
+        <img src="/Imagens/logo.png" alt="Logo da QuantumLab">
+    </header>
+
+    <!-- ATUALIZAÇÃO 01/09 - MENU -->
+    <nav class="menu">
+        <a href="../pagina_de_inicio/index.html">INÍCIO</a>
+        <a href="../pagina_de_produtos/produtos.html">PRODUTOS</a>
+        <a href="../pagina_de_promocao/promocoes.html" class="ativo">PROMOÇÕES</a>
+        <a href="../pagina_de_contato/contato.html">CONTATO</a>
+    </nav>
+
+    <!-- ATUALIZAÇÃO 01/09 - AVISO DE PROMOÇÃO -->
+    <div class="faixa-promocao">
+        <span id="descontoProduto">OFERTA</span>
+        <p id="validadeProduto"></p>
+    </div>
+
+    <!-- ATUALIZAÇÃO 01/09 - PRODUTO PROMOCIONAL -->
+    <main class="pagina-compra">
+
+        <!-- ATUALIZAÇÃO 01/09 - GALERIA -->
+        <section class="galeria">
+            <div class="miniaturas" id="miniaturas"></div>
+
+            <div class="foto-principal">
+                <img
+                    id="imagemPrincipal"
+                    src=""
+                    alt="Produto promocional"
+                >
+            </div>
+        </section>
+
+        <!-- ATUALIZAÇÃO 01/09 - INFORMAÇÕES -->
+        <section class="informacoes">
+            <p class="categoria" id="categoriaProduto"></p>
+
+            <h1 id="nomeProduto"></h1>
+
+            <!-- ATUALIZAÇÃO 01/09 - PREÇOS DA PROMOÇÃO -->
+            <div class="bloco-precos">
+                <p class="preco-original" id="precoOriginalProduto"></p>
+                <h2 id="precoPromocionalProduto"></h2>
+            </div>
+
+            <p class="descricao" id="descricaoProduto"></p>
+
+            <hr>
+
+            <!-- ATUALIZAÇÃO 01/09 - MODELO -->
+            <div class="modelo">
+                <p>Modelo selecionado:</p>
+                <h3 id="nomeModelo"></h3>
+                <p id="especificacaoModelo"></p>
+            </div>
+
+            <!-- ATUALIZAÇÃO 01/09 - TAMANHOS -->
+            <div class="area-tamanhos" id="areaTamanhos">
+                <p>Escolha o tamanho:</p>
+                <div class="tamanhos" id="tamanhos"></div>
+            </div>
+
+            <!-- ATUALIZAÇÃO 01/09 - BOTÃO AINDA SEM FUNÇÃO -->
+            <button class="botao-carrinho">
+                ADICIONAR AO CARRINHO
+            </button>
+
+            <!-- ATUALIZAÇÃO 01/09 - VOLTAR PARA AS PROMOÇÕES -->
+            <a class="voltar-promocoes" href="promocoes.html">
+                ← VOLTAR PARA AS PROMOÇÕES
+            </a>
+        </section>
+    </main>
+
+    <script
+        type="module"
+        src="/pagina_de_promocao/compra_promocao.js">
+    </script>
+</body>
+</html>
+

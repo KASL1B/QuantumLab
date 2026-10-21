@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Produtos - QuantumLab</title>
+    <link rel="stylesheet" href="produtos.css">
+  </head>
+  <body>
+    <div class="barra-topo">FRETE GRÁTIS PARA TODO O BRASIL</div>
+
+    <header>
+      <img src="/Imagens/logo.png" alt="logo da loja QuantumLab"/>
+
+      <input
+        type="text"
+        id="pesquisa"
+        placeholder="O que você procura?"
+        onkeyup="filtrarProdutos()"
+      />
+    </header>
+
+    <nav class="menu">
+      <a href="/pagina_de_inicio/index.html">INÍCIO</a>
+      <a href="#">PRODUTOS</a>
+      <a href="/pagina_de_promocao/promocoes.html">PROMOÇÕES</a>
+      <a href="/pagina_de_contato/contato.html">CONTATO</a>
+    </nav>
+
+    <div class="area-categorias">
+      <button class="botao-categorias" onclick="abrirCategorias()">
+        CATEGORIAS ⬇
+      </button>
+
+      <div class="menu-categorias" id="menuCategorias">
+        <button onclick="filtrarCategorias('todos')">TODOS</button>
+        <button onclick="filtrarCategorias('placa_mae')">PLACA MÃE</button>
+        <button onclick="filtrarCategorias('placa_de_video')">
+          PLACAS DE VÍDEO
+        </button>
+        <button onclick="filtrarCategorias('processador')">
+          PROCESSADORES
+        </button>
+        <button onclick="filtrarCategorias('fonte')">FONTES</button>
+        <button onclick="filtrarCategorias('componentes')">COMPONENTES</button>
+        <button onclick="filtrarCategorias('gabinete')">GABINETES</button>
+        <button onclick="filtrarCategorias('consoles')">CONSOLES</button>
+        <button onclick="filtrarCategorias('perifericos')">PERIFERICOS</button>
+        <button onclick="filtrarCategorias('monitores')">MONITORES E TV</button>
+        <button onclick="filtrarCategorias('outros')">OUTROS</button>
+      </div>
+    </div>
+
+    <main class="produtos" id="lista-produtos">
+
+    </main>
+
+    <script type="module" src="produtos.js"></script>
+  </body>
+</html>

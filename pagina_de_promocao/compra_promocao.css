@@ -1,0 +1,354 @@
+
+
+/* ATUALIZAÇÃO 01/09 - TODO ESTE ARQUIVO FOI CRIADO NESTA ATUALIZAÇÃO */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+/* ATUALIZAÇÃO 01/09 - BARRA SUPERIOR */
+.barra-topo {
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ATUALIZAÇÃO 01/09 - CABEÇALHO */
+header {
+    background-color: rgb(14, 35, 53);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ATUALIZAÇÃO 01/09 - MENU */
+.menu {
+    background-color: #0d0d0d0d;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 18px;
+    border-bottom: 1px solid #222;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+    color: lightgray;
+}
+
+/* ATUALIZAÇÃO 01/09 - FAIXA PROMOCIONAL */
+.faixa-promocao {
+    max-width: 1200px;
+    margin: 35px auto 0;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: lightgray;
+    border: 1px solid #222;
+    border-left: 5px solid #222;
+    border-radius: 8px;
+}
+
+.faixa-promocao span {
+    padding: 8px 12px;
+    background-color: lightyellow;
+    color: black;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.faixa-promocao p {
+    margin: 0;
+    color: black;
+    font-size: 13px;
+}
+
+/* ATUALIZAÇÃO 01/09 - ÁREA PRINCIPAL */
+.pagina-compra {
+    max-width: 1200px;
+    margin: 35px auto 60px;
+    padding: 0 30px;
+    display: flex;
+    gap: 60px;
+}
+
+/* ATUALIZAÇÃO 01/09 - GALERIA */
+.galeria {
+    width: 58%;
+    display: flex;
+    gap: 20px;
+}
+
+.miniaturas {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.miniaturas img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #222;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.miniaturas img:hover,
+.miniaturas img.selecionada {
+    border-color: white;
+    transform: scale(1.03);
+}
+
+.foto-principal {
+    flex: 1;
+    background-color: lightgray;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.foto-principal::after {
+    content: "PROMOÇÃO";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 8px 12px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.foto-principal img {
+    width: 100%;
+    height: 550px;
+    object-fit: contain;
+    display: block;
+}
+
+/* ATUALIZAÇÃO 01/09 - INFORMAÇÕES */
+.informacoes {
+    width: 42%;
+    padding: 28px;
+    background-color: lightgray;
+    border: 1px solid #222;
+    border-radius: 14px;
+}
+
+.categoria {
+    color: black;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+
+.informacoes h1 {
+    font-size: 34px;
+    margin: 0 0 20px;
+}
+
+.bloco-precos {
+    margin-bottom: 24px;
+    padding: 18px;
+    background-color: #222;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.preco-original {
+    margin: 0 0 6px;
+    color: gray;
+    font-size: 15px;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.bloco-precos h2 {
+    margin: 0;
+    font-size: 32px;
+    color: white;
+}
+
+.descricao {
+    color: black;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+/* ATUALIZAÇÃO 01/09 - MODELO */
+.modelo {
+    margin-bottom: 30px;
+}
+
+.modelo > p:first-child,
+.area-tamanhos > p {
+    color: black;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.modelo h3 {
+    font-size: 19px;
+    margin: 0 0 10px;
+}
+
+.modelo > p:last-child {
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* ATUALIZAÇÃO 01/09 - TAMANHOS */
+.area-tamanhos {
+    display: none;
+    margin-bottom: 30px;
+}
+
+.tamanhos {
+    display: flex;
+    gap: 10px;
+}
+
+.tamanhos button {
+    width: 48px;
+    height: 45px;
+    background-color: lightgray;
+    color: black;
+    border: 1px solid #555;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tamanhos button:hover {
+    background-color: #333;
+}
+
+.tamanhos button.selecionado {
+    background-color: #222;
+    color: white;
+    border-color: white;
+}
+
+/* ATUALIZAÇÃO 01/09 - BOTÕES */
+.botao-carrinho {
+    width: 100%;
+    padding: 17px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-carrinho:hover {
+    background-color: #218838;
+}
+
+.voltar-promocoes {
+    display: block;
+    margin-top: 18px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.voltar-promocoes:hover {
+    color: gray;
+}
+
+/* ATUALIZAÇÃO 01/09 - RESPONSIVIDADE */
+@media (max-width: 850px) {
+    .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .faixa-promocao {
+        margin: 25px 20px 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pagina-compra {
+        flex-direction: column;
+    }
+
+    .galeria,
+    .informacoes {
+        width: 100%;
+    }
+
+    .foto-principal img {
+        height: 450px;
+    }
+}
+
+/* ATUALIZAÇÃO 01/09 - REMOVE A FAIXA ESCURA ABAIXO DA FOTO DO PRODUTO */
+.pagina-compra {
+    align-items: flex-start;
+}
+
+/* ATUALIZAÇÃO 01/09 - IMPEDE A GALERIA DE ESTICAR A ÁREA DA FOTO */
+.galeria {
+    align-items: flex-start;
+}
+
+/* ATUALIZAÇÃO 01/09 - A CAIXA DA FOTO TERMINA EXATAMENTE NO FINAL DA IMAGEM */
+.foto-principal {
+    align-self: flex-start;
+}
+

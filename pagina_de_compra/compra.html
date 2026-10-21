@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto - QuantumLab</title>
+    <link rel="stylesheet" href="compra.css">
+
+</head>
+<body>
+    <div class="barra-topo">FRETE GRÁTIS PARA TODO O BRASIL</div>
+
+    <header>
+        <img src="/Imagens/logo.png" alt="Logo da loja QuantumLab">
+    </header>
+    
+    <nav class="menu">
+        <a href="/pagina_de_inicio/index.html">INÍCIO</a>
+        <a href="/pagina_de_produtos/produtos.html">PRODUTOS</a>
+        <a href="/pagina_de_promocao/promocoes.html">PROMOÇÕES</a>
+        <a href="/pagina_de_contato/contato.html">CONTATO</a>
+    </nav>
+
+    <main class="pagina-compra">
+        <section class="galeria">
+            <div class="miniaturas" id="miniaturas"></div>
+
+            <div class="foto-principal">
+                <img id="imagem_principal" src="" alt="Produto">
+            </div>
+        </section>
+
+        <section class="informacoes">
+            <p class="categoria" id="categoria_produto"></p>
+            <h1 id="nome_produto"></h1>
+            <h2 id="preco_produto"></h2>
+            <p class="descricao" id="descricao_produto"></p>
+
+            <hr>
+            <div class="modelo">
+                <p>Modelo selecionado:</p>
+                <h3 id="nome_modelo"></h3>
+                <p id="especificacao_modelo"></p>
+            </div>
+
+            <div class="area-tamanhos" id="area_tamanhos">
+                <p>Escolha tamanho:</p>
+                <div class="tamanhos" id="tamanhos"></div>
+            </div>
+
+            <button class="botao-carrinho">ADICIONAR AO CARRINHO</button>
+
+            <a class="voltar-produtos" href="../pagina_de_produtos/produtos.html"> ← VOLTAR PARA OS PRODUTOS </a>
+            
+        </section>
+
+    </main>
+    <script type="module" src="compra.js"></script>
+</body>
+</html>

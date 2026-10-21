@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: gray;
+}
+
+h2 {
+  font-size: 15px;
+  margin-top: 12px;
+}
+p {
+  font-size: 13px;
+}
+
+header input {
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+header {
+  background-color: rgb(14, 35, 53);
+  color: #25f1f1;
+  text-align: center;
+  padding: 30px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+header img {
+  width: 400px;
+  height: auto;
+  margin-left: 5%;
+  border-radius: 25%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  width: 100%;
+  font-size: 13px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.3;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.barra-topo {
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu {
+  background-color: #0d0d0d0d;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px;
+  border-bottom: 1px solid #222;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: lightgray;
+}
+
+.hero {
+  height: 600px;
+
+  background-image: url(/Imagens/banner.png);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 80px;
+}
+
+.hero-texto h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #d1d1d1;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  color: #d1d1d1;
+
+  margin-bottom: 30px;
+}
+
+.botao-hero {
+  background-color: white;
+  color: black;
+
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.botao-hero:hover {
+  background-color: gray;
+}
+
+.sobre {
+  text-align: center;
+
+  padding: 80px 20px;
+}
+
+.sobre h2 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 28px;
+}
+
+.diferenciais {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 30px;
+
+  padding: 40px;
+}
+
+.card-diferencial {
+  background-color: #1a1a1a;
+  width: 280px;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #2b2b2b;
+  transition: 0.3s;
+}
+
+.card-diferencial:hover {
+  transform: translateY(-5px);
+  border-color: white;
+}
+
+.card-diferencial p,
+h3 {
+  color: #d1d1d1;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+}
+
+footer p {
+  color: #999;
+}

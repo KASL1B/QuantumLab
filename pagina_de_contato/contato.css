@@ -1,0 +1,113 @@
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  background-color: gray;
+  color: white;
+}
+
+/* Barra superior */
+
+.barra-topo {
+  background-color: gray;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Header */
+header {
+  background-color: rgb(14, 35, 53);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #333;
+}
+
+header img {
+  width: 400px;
+  border-radius: 25%;
+  transition: 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu */
+
+.menu {
+  background-color: #0d0d0d0d;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 18px;
+  border-bottom: 1px solid #222;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: lightgray;
+}
+
+/* Área principal */
+.suporte {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.suporte h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.suporte input {
+  padding: 16px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 30px;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.faq {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.pergunta {
+  background-color: #1a1a1a;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+  transition: 0.3s;
+}
+
+.pergunta:hover {
+  border-color: #555;
+}
+
+.pergunta h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.pergunta p {
+  color: #bdbdbd;
+  margin-bottom: 0;
+}
